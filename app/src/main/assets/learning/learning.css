@@ -1,0 +1,10 @@
+/* Device-local presentation only. The project instructions live on the server. */
+aside, nav, [role="navigation"], #stage-slideover-sidebar,
+[data-testid*="sidebar" i], [aria-controls*="sidebar" i],
+button[aria-label*="sidebar" i], button[aria-label*="side bar" i],
+button[aria-label*="侧栏"], button[aria-label*="边栏"],
+button[aria-haspopup="menu"]:not([data-testid="composer-plus-btn"]):not([aria-label*="文件"]):not([aria-label*="attach" i]),
+[aria-label*="share" i], [aria-label*="分享"], [title*="share" i], [title*="分享"], [data-testid*="share" i],
+[data-testid="profile-button"], [data-testid="share-chat-button"] {
+ display:none !important;
+}

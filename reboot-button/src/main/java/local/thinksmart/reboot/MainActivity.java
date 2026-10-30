@@ -1,0 +1,10 @@
+package local.thinksmart.reboot;
+import android.app.*;import android.os.Bundle;import android.view.WindowManager;import android.widget.Toast;import java.net.*;import java.io.*;import org.json.JSONObject;
+public final class MainActivity extends Activity {
+ private boolean requested;
+ protected void onCreate(Bundle state){super.onCreate(state);getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);if(state!=null&&state.getBoolean("requested")){finish();return;}
+ new AlertDialog.Builder(this).setTitle("重启设备？").setMessage("音乐和学习会暂时中断，重启后返回桌面。").setNegativeButton("取消",(d,w)->finish()).setPositiveButton("确认重启",(d,w)->reboot()).setOnCancelListener(d->finish()).show();}
+ protected void onSaveInstanceState(Bundle b){b.putBoolean("requested",requested);super.onSaveInstanceState(b);}
+ private void reboot(){if(requested)return;requested=true;String key=getSharedPreferences("reboot",0).getString("api_key","");if(!key.matches("[a-f0-9]{64}")){fail();return;}Toast.makeText(this,"正在重启…",Toast.LENGTH_LONG).show();new Thread(()->{HttpURLConnection c=null;try{c=(HttpURLConnection)new URL("http://127.0.0.1:8767/api/reboot").openConnection();c.setConnectTimeout(4000);c.setReadTimeout(6000);c.setInstanceFollowRedirects(false);c.setRequestMethod("POST");c.setRequestProperty("X-Api-Key",key);c.setDoOutput(true);c.setFixedLengthStreamingMode(0);c.getOutputStream().close();if(c.getResponseCode()!=200)throw new IOException();ByteArrayOutputStream out=new ByteArrayOutputStream();try(InputStream in=c.getInputStream()){byte[]buf=new byte[1024];int n;while((n=in.read(buf))!=-1){if(out.size()+n>8192)throw new IOException();out.write(buf,0,n);}}JSONObject r=new JSONObject(out.toString("UTF-8"));if(!r.optBoolean("success",false)||!r.optJSONObject("data").optBoolean("executed",false))throw new IOException();runOnUiThread(()->finish());}catch(Exception e){runOnUiThread(()->fail());}finally{if(c!=null)c.disconnect();}},"confirmed-reboot").start();}
+ private void fail(){if(!isFinishing())new AlertDialog.Builder(this).setTitle("暂时无法重启").setMessage("桌面管理服务暂不可用，请稍后再试。").setPositiveButton("返回桌面",(d,w)->finish()).setOnCancelListener(d->finish()).show();}
+}

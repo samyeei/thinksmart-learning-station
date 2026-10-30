@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>登录 · ThinkSmart 家长查看</title><link rel="stylesheet" href="/style.css"><script src="/login.js" defer></script></head>
+<body class="login-body"><main class="login-card">
+<p class="eyebrow">THINKSMART <span class="badge">本地 Wi-Fi</span></p>
+<h1>ThinkSmart 家长查看</h1><p class="intro">手机与孩子的设备连接同一家庭 Wi-Fi 后，输入家长密码。</p>
+<form id="login-form" method="post" action="/login" autocomplete="on"><label for="password">家长密码</label><input type="password" id="password" name="password" autocomplete="current-password" required maxlength="1024"><button id="login-submit" type="submit">登录查看</button></form><p id="login-message" class="muted" role="alert" aria-live="polite" hidden></p><noscript><p>请启用 JavaScript 后登录并查看设备数据。</p></noscript>
+<p class="fine">登录有效期 8 小时。请只在可信的家庭 Wi-Fi 中访问；此页面使用本地 HTTP 连接。</p>
+<div class="privacy-note">设备保留家长监督说明和服务通知。记录前台时长和被拦截站点；查看屏幕须经过设备系统授权。不持续录屏、录音或后台记录聊天内容。</div>
+</main></body></html>

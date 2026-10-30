@@ -1,0 +1,1 @@
+<resources><string name="manual_description">在 ChatGPT 中提供手动键盘按钮；仅处理窗口与焦点事件，不读取聊天文字。</string></resources>

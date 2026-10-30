@@ -1,0 +1,1 @@
+{"manifest_version": 2, "name": "ThinkSmart learning view", "version": "1.0.5", "browser_specific_settings": {"gecko": {"id": "learning@thinksmart.local"}}, "content_scripts": [{"matches": ["https://chatgpt.com/*"], "css": ["learning.css"], "run_at": "document_start"}]}

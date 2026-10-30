@@ -1,0 +1,24 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'local.thinksmart.chatgpt'
+    compileSdk {
+        version = release(37) { minorApiLevel = 2 }
+    }
+    defaultConfig {
+        applicationId 'local.thinksmart.chatgpt'
+        minSdk 26
+        targetSdk 37
+        versionCode 28
+        versionName '1.4.3'
+        ndk { abiFilters 'armeabi-v7a' }
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+    packaging { jniLibs { useLegacyPackaging = true } }
+
+    buildTypes { release { minifyEnabled false } }
+}
+dependencies {
+    implementation 'org.mozilla.geckoview:geckoview:159.0.20261022150525'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.json:json:20240303'
+}

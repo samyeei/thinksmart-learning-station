@@ -1,0 +1,8 @@
+plugins { id 'com.android.application' }
+android {
+ namespace 'local.thinksmart.screenmode'
+ compileSdk { version = release(37) { minorApiLevel = 2 } }
+ defaultConfig { applicationId 'local.thinksmart.screenmode'; minSdk 26; targetSdk 37; versionCode 1; versionName '1.0.0' }
+
+ buildTypes { release { minifyEnabled false } }
+}
