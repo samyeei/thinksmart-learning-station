@@ -1,8 +1,35 @@
 # ThinkSmart Learning Station
 
+![ThinkSmart Learning Station 项目概念封面](assets/generated/project-hero.jpg)
+
+*封面由内置 GPT 图片生成工具参照实物照片合成，保留竖屏机身与语音界面布局；实际细节以实拍为准。*
+
 把闲置的 **Lenovo ThinkSmart View** 变成家庭学习终端：官方 ChatGPT App、手动中文键盘、大时钟桌面、音乐入口和局域网家长端。
 
 这是从真实家庭设备整理出的 **源码预览版（alpha）**，不是 ROM，也不是通用一键刷机包。参考环境为 Android 8.1 / API 27 / ARMv7；公开版与家中设备配置独立。尚未在第二台全新设备上完成从零安装验收。
+
+## 实机画面
+
+以下两张是参考设备的真实照片，仅转为 JPEG、缩小尺寸并移除照片元数据；没有用 AI 重绘屏幕。它们展示特定设备与版本的界面，不等于所有功能已在公开版全新安装中验收。
+
+<table>
+<tr><th>官方 ChatGPT 语音界面</th><th>MusicFree 音乐界面</th></tr>
+<tr><td width="50%"><img src="assets/photos/voice-mode.jpg" alt="ThinkSmart View 竖屏展示 ChatGPT 语音界面，右侧是手动键盘按钮" width="420"></td><td width="50%"><img src="assets/photos/music-player.jpg" alt="ThinkSmart View 竖屏展示 MusicFree 音乐播放器界面" width="420"></td></tr>
+</table>
+
+语音画面可见右侧手动键盘按钮，未展示对话正文；音乐画面仅展示播放器状态，不包含或提供音乐文件、音源与插件。另两张含个人昵称或第三方学习图谱的照片未上传。
+
+## 设计理念 · AI 概念图
+
+![为孩子留出思考空间：提问、探索、解释](assets/generated/guided-learning.jpg)
+
+**让孩子经历思考过程。** 通过辅导指令鼓励提问、逐步探索和自己解释；不把“模型绝不直接给答案”作为保证。
+
+![家庭 Wi-Fi 内的学习终端与家长手机概念图](assets/generated/home-connection.jpg)
+
+**手机查看，设备独立运行。** 这张图仅表达家庭局域网的使用关系，不是家长端截图；当前家长页使用 HTTP，图中的连接不表示已加密，也不表示支持公网远程访问。
+
+图片来源、生成提示词和展示边界见 [图片说明](assets/README.md)。
 
 ## 这套方案做什么
 
