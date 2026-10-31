@@ -50,3 +50,5 @@ After flashing, verify normal boot, restart, and Wi-Fi before installing apps. T
 Test the separate child account and parent linking, guided tutoring, manual keyboard show/hide, portrait sidebar behavior, continuous voice, photo input/orientation, music, timeout, parent sign-in/password change, restart, and operation without a computer. Distinguish **tested on this hardware**, **parent-reported**, and **untested**. Successful installation is not complete feature acceptance.
 
 If something fails, preserve minimal diagnostics and matched backups, then follow the recovery plan. Avoid trying unrelated firmware, clearing accounts, or changing working voice/camera components without evidence.
+
+For root-guide scope and upstream references, see [Resources](RESOURCES.en.md).

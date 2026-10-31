@@ -59,6 +59,10 @@ ChatGPT, Fcitx, MusicFree, FreeKiosk, and firmware come from their respective au
 - Blocked-domain events come only from this project's web fallback or compatible browser bridge. **They are not the official app's browsing, searches, or chat history, nor device-wide network logs.** Screen viewing needs Android authorization and may include visible conversations; one frame is fetched only when requested.
 - The parent page uses local HTTP without transport encryption for passwords or images. Use a trusted home Wi-Fi network and do not expose the port publicly. Add encrypted access before using it remotely or on a shared network.
 
+## Downloads and configuration
+
+See [downloads and configuration resources](docs/RESOURCES.en.md) for Codex, MusicFree, music/lyrics plugins, import instructions, and the current limits of the root guide.
+
 ## Getting started
 
 1. Read [Installation and acceptance](docs/INSTALL.en.md); check compatibility and backups first.

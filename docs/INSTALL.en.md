@@ -109,3 +109,5 @@ Record each item as **passed on hardware**, **failed**, or **untested**. Source 
 ## Rollback
 
 Keep your APK backups, original signing material, and installation record. Disable the keyboard helper, restore the previous home app and timeout, and reinstall older APKs only when signing/version rules allow it. Downgrades or different signatures may prevent direct rollback; do not automatically add `-d` or uninstall. Private app-data recovery depends on prior backups. Do not wipe data to work around signing failures. Firmware changes require the device-specific recovery plan in the [recovery guide](FLASHING.en.md).
+
+Downloads and music/lyrics plugin configuration: [resource list](RESOURCES.en.md).
