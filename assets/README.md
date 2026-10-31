@@ -1,5 +1,7 @@
 # 项目展示图片
 
+[Chinese](README.md) | [English](README.en.md)
+
 ## 来源与真实性
 
 | 文件 | 类型 | 用途 |

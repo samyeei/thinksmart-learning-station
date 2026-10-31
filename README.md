@@ -1,5 +1,7 @@
 # ThinkSmart Learning Station
 
+[Chinese](README.md) | [English](README.en.md)
+
 ![ThinkSmart Learning Station 项目概念封面](assets/generated/project-hero.jpg)
 
 *封面由内置 GPT 图片生成工具参照实物照片合成，保留竖屏机身与语音界面布局；实际细节以实拍为准。*

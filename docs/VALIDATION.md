@@ -1,5 +1,7 @@
 # 验证状态
 
+[Chinese](VALIDATION.md) | [English](VALIDATION.en.md)
+
 2026-10-31，公开源码预览版。
 
 ## 本地公开候选验证

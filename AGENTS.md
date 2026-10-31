@@ -1,5 +1,7 @@
 # Agent 安装与维护约定
 
+[Chinese](AGENTS.md) | [English](AGENTS.en.md)
+
 先阅读 README、docs/INSTALL.md、docs/FLASHING.md 和 docs/VALIDATION.md。
 
 - 所有ADB操作显式指定用户选定的序列号；不从作者机器配置推断用户环境。

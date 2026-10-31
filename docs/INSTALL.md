@@ -1,5 +1,7 @@
 # 安装与验收
 
+[Chinese](INSTALL.md) | [English](INSTALL.en.md)
+
 ## 适用范围
 
 源码预览版参考 Android8.1/API27、ARMv7 的 ThinkSmart View。已有可用系统优先安装组件；本指南不自动 root、刷机、清除数据、停用系统包或设置 Device Owner。机型/系统不符时先评估移植，不套用整机镜像。

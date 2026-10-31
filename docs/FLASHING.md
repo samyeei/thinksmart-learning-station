@@ -1,5 +1,7 @@
 # ThinkSmart View 刷机、备份与恢复指南
 
+[Chinese](FLASHING.md) | [English](FLASHING.en.md)
+
 本方案公开操作方法，不公开家庭备份、Google/ChatGPT 账号数据或一份可用于所有机器的固件。目标是让操作者能判断自己的设备是否匹配，再执行可复核的步骤。
 
 ## 1. 先分清安装组件和刷机

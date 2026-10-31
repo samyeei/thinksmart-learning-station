@@ -1,5 +1,7 @@
 # 第三方与来源
 
+[Chinese](THIRD_PARTY_NOTICES.md) | [English](THIRD_PARTY_NOTICES.en.md)
+
 本仓库 MIT 许可只覆盖本仓库作者有权许可的自研源码；依赖与外部应用不因此改为 MIT。
 
 | 名称 | 使用方式与来源 | 许可/权利边界 |
